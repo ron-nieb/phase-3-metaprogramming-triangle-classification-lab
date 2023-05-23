@@ -1,6 +1,4 @@
 class Triangle
-  class TriangleError < StandardError
-  end
 
   attr_reader :side1, :side2, :side3
 
@@ -20,6 +18,9 @@ class Triangle
     else
       :scalene
     end
+  end
+  
+  class TriangleError < StandardError
   end
 
   def validate_triangle
